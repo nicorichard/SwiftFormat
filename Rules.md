@@ -2859,7 +2859,7 @@ Insert/remove explicit `self` where applicable.
 Option | Description
 --- | ---
 `--self` | Explicit self: "insert", "remove" (default) or "init-only"
-`--self-required` | Comma-delimited list of functions with @autoclosure arguments
+`--selfrequired` | Comma-delimited list of functions with @autoclosure arguments
 
 <details>
 <summary>Examples</summary>
@@ -2880,7 +2880,7 @@ Option | Description
 
 In the rare case of functions with `@autoclosure` arguments, `self` may be
 required at the call site, but SwiftFormat is unable to detect this
-automatically. You can use the `--self-required` command-line option to specify
+automatically. You can use the `--selfrequired` command-line option to specify
 a list of such methods, and the `redundantSelf` rule will then ignore them.
 
 An example of such a method is the `expect()` function in the Nimble unit
